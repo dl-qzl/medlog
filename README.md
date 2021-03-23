@@ -1,4 +1,4 @@
-<h1>前言</h1>
+﻿<h1>前言</h1>
 <p>一般来说，产品做出的原型多多少少会带有&ldquo;个人&rdquo;倾向，UI设计的交互也会人所不同，而当公司生存下来了后，数据沉淀达到一定量了后，这种迭代就决不能拍脑袋了，因为人是具有偏见的，如果带有&ldquo;偏见&rdquo;的产品上线后，其反响是不能预估的，我们不能将公司的生存放在&ldquo;可能&rdquo;这种说法上。</p>
 <p>小步快跑，通过迭代来优化产品，但如果每个迭代都颠覆了之前的设计，那就是原地踏步，每一次迭代都要知道这个迭代哪里出了问题，然后再针对问题做优化，而不是频繁的改版，持续优化，这个就必须建立在比较良好的数据监控与数据分析上，人有偏见但是数据不会，。</p>
 <p>所以大公司的核心产品，每一个决策，每一个迭代都需要分析各种数据，建立完善的AB Testing与小流量机制，待收到了充分的信息证明这次迭代是有效的后再做真正的全量更新。</p>
@@ -12,7 +12,7 @@
 <p id="autoid-0-0-0" class="postTitle"><a id="cb_post_title_url" class="postTitle2" href="http://www.cnblogs.com/yexiaochai/p/6256832.html">【数据可视化之数据定义】如何设计一个前端监控系统</a>&nbsp;描述如何获取各种指标数据，如何归类，首篇博客补足</p>
 <p id="autoid-0-0-0" class="postTitle"><a id="cb_post_title_url" class="postTitle2" href="http://www.cnblogs.com/yexiaochai/p/6256840.html">【数据可视化之持久化】如何设计一个前端监控系统</a>&nbsp;描述如何做存储（涉及大数据部分由其他同事整理）</p>
 <p id="autoid-0-0-0" class="postTitle"><a id="cb_post_title_url" class="postTitle2" href="http://www.cnblogs.com/yexiaochai/p/6256861.html">【数据可视化之图表呈现（dashboard）】如何设计一个前端监控系统</a>&nbsp;描述如何将数据变为有效的展示</p>
-<p><span style="font-size: 18px;"><strong>代码地址：<a href="https://github.com/yexiaochai/medlog" target="_blank">https://github.com/yexiaochai/medlog</a></strong></span></p>
+<p><span style="font-size: 18px;"><strong>代码地址：<a href="https://github.com/dl-qzl/medlog" target="_blank">https://github.com/dl-qzl/medlog</a></strong></span></p>
 <p><span style="color: #ff0000;">如果文中有误的地方请您指出。</span></p>
 <h1>统计数据</h1>
 <p>统计属于海量数据的范畴，产品分析做的越细，所产生的数据量越大，比如我要做一个用户点击热点的话，就需要收集用户所有的点击数据，这个可能是pv的数十倍；另一方面，海量统计应该是脱离业务本身的，用户可定制化打点需求，以满足不同业务的变化。</p>
@@ -131,7 +131,7 @@
 </span><span style="color: #008080;">4</span> };</pre>
 </div>
 <p>基本的采集实现就这么简单，但是后续逐步完善的功能，会增加复杂度，<span style="color: #ff0000;"><strong>于是我建立了一个git仓库存储代码，后续大数据一块的代码也将放到这里</strong></span>：</p>
-<p><a href="https://github.com/yexiaochai/medlog" target="_blank">https://github.com/yexiaochai/medlog</a></p>
+<p><a href="https://github.com/dl-qzl/medlog" target="_blank">https://github.com/dl-qzl/medlog</a></p>
 <p>闭门造车的意义不大，翻看前辈的一些采集代码比如<a href="https://github.com/fex-team/alogs/blob/master/alog.js" target="_blank">alog</a>，会发现他打点的一块是这样做的：</p>
 <div class="cnblogs_code">
 <pre><span style="color: #008080;"> 1</span> <span style="color: #008000;">/*</span><span style="color: #008000;">*
@@ -170,4 +170,4 @@
 <p>前端数据有很多需要处理的地方，而数据的核心分为数据采集打点，数据持久化，数据使用，数据分析。</p>
 <p>打点又会区分H5打点与native打点，native由于权限本身，能做的事情更多，但是底层数据收集基本能做到统一。</p>
 <p>采集的代码是其中一部分，但采集的各项数据获取是另一个更重要的部分，会包含数据设计，各种细节处理，我们下篇文章接着研究，有兴趣的同学可关注。</p>
-<p>代码地址：<a href="https://github.com/yexiaochai/medlog" target="_blank">https://github.com/yexiaochai/medlog</a></p>
+<p>代码地址：<a href="https://github.com/dl-qzl/medlog" target="_blank">https://github.com/dl-qzl/medlog</a></p>
